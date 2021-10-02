@@ -22,26 +22,35 @@
   
   <!-- Links -->
   <ul class="navbar-nav">
-      <% if(title == "Home"){ %>
-        <li class="nav-item active">
-          <br>
-      <% } else{ %>
-          <li class="nav-item">
-      <% } %>
-          <a class="nav-link" href="/">Home</a>
-    </li>
-   
     <li class="nav-item">
-      <a class="nav-link" href="/about">About Me</a>
+      <% if(title == 'Express'){ %>
+        <a class="nav-link" href="/about">About</a>
+     <% } else{ %> 
+      <a class="nav-link" href="/">Home</a>
+    <% } %>
     </li>
     <li class="nav-item">
+      <% if(title == 'Projects' || title == 'Projects' || title == 'Services' || title == 'Contact'){ %>
+        <a class="nav-link" href="/about">About</a>
+     <% } else{ %> 
       <a class="nav-link" href="/projects">Projects</a>
+    <% } %>
     </li>
     <li class="nav-item">
+      <% if(title == 'Services' || title == 'Contact'){ %>
+        <a class="nav-link" href="/projects">Projects</a>
+     <% } else{ %> 
       <a class="nav-link" href="/services">Services</a>
+    <% } %>
+     
     </li>
     <li class="nav-item">
+      <% if(title == 'Contact'){ %>
+        <a class="nav-link" href="/services">Services</a>
+     <% } else{ %> 
       <a class="nav-link" href="/contact">Contact</a>
+    <% } %>
+      
     </li>
   </ul>
 </nav>
