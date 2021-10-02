@@ -2,6 +2,29 @@
 
 
 <h1><%= title %></h1>
+
+<form action="/action_page.php">
+    <div class="form-group">
+        <label for="email">Name:</label>
+        <input type="input" class="form-control" id="name" placeholder="Enter Name" name="name">
+      </div>
+    
+    <div class="form-group">
+
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Phone:</label>
+      <input type="tel" class="form-control" id="telephone" placeholder="Enter Phone Number" name="phone">
+    </div>
+    <div class="form-group">
+        <label for="comment">Message:</label>
+        <textarea class="form-control" rows="5" id="message"></textarea>
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+<!-- 
 <form action="submit" novalidate="novalidate">
     <div id="allFilledErrorField"></div>
     <table>
@@ -50,5 +73,5 @@
             </td>
         </tr>
     </table>
-</form>
+</form> -->
 <% include partials/footer.ejs %>
