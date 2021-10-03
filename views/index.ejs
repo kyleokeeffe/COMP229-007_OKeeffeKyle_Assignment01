@@ -1,32 +1,39 @@
+  <!-- 
+    Filename:     index.ejs 
+    Student name: Kyle O'Keeffe
+    StudentID:    301156790
+    Date:         Oct. 2, 2021 
+  -->
+
+    
+    
+    
     <% include partials/header.ejs %>
 
+<!-- EJS determining contents of index Main-->
 
     <% if(title == 'Home'){ %>
       <div class="m-4 container">
-        <!-- <div class="container"> -->
+    <!-- Header -->
           <div class="w-60 mx-auto jumbotron">
             <h1 class="mx-auto">Professional Portfolio - Kyle O'Keeffe</h1>      
             Welcome to the Professional Portfolio of Kyle O'Keeffe
           </div>
        
-        <!-- </div> -->
+    <!-- Mission Statement -->
           <div class="mx-auto w-60 row">
             <div class="card">
             <div class="card-title"><h3>Mission Statement</h3></div>
             <div class="card-text">My mission is to develop my skills and knowledge in Software development in order to contribute to the development of software that will have a meaningful impact on both personal lives of individuals and the operations of the businesses where they devote their passion.</div>
-           
         </div>
           </div>
-          
-      
-        
-
       </div>
-    
-    
+
+    <!-- About me Main contents -->
       <% } else if (title == 'About Me'){%>
         <h1><%= title %></h1>
       <div class = "m-4 container">
+        <!-- Grid display for self Image -->
         <div class = "row">
           <div class="col-sm-4">
             <div class="card" style="width:400px">
@@ -42,13 +49,13 @@
           </div>
         </div>
       </div>
+
+  <!-- Projects Main contents -->
       <% } else if (title == 'Projects'){%>
         <h1><%= title %></h1>
-
         <div class = "container">
+          <!-- Card deck for project samples -->
           <div class="card-deck d-sm-flex flex-sm-row align-content-around">
-        
-
             <div class="m-2 card" style="width:400px">
               <div class="card-body">
                 <h4 class="card-title">Student Records Application </h4>
@@ -57,14 +64,11 @@
               </div>
               <img class="card-img-bottom" src="images/studentTracking.PNG" alt="Image of GUI for Student Tracking software" style="width:100%">
             </div>
-
-
             <div class="m-2 card" style="width:400px">
               <div class="card-body">
                 <h4 class="card-title">Customer Service Chatbot SRS</h4>
                 <p class="card-text">Description<br>Contributed to development of software requirements documentation for a chatbot browser add-on.</p>
                 <p class="card-text">Role<br>Team contributor</p>
-
               </div>
               <img class="card-img-bottom" src="images/chatBotDiagram.png" alt="Image of diagram for Chatbot software" style="width:100%">
             </div>
@@ -78,12 +82,12 @@
             </div>
           </div>
         </div>
-      
+
+  <!-- Services Main contents -->
     <% } else if(title == 'Services'){ %>
       <h1><%= title %></h1>
-
       <div class="container">
-
+        <!-- List group for service listing -->
         <ul class="list-group">
           <li class="list-group-item">
             <div class="card">
@@ -95,7 +99,6 @@
                 </ul>
               </p>
             </div>
-
           </li>
           <li class="list-group-item">
             <div class="card">
@@ -107,7 +110,6 @@
                 </ul>
               </p>
             </div>
-
           </li>
           <li class="list-group-item">
             <div class="card">
@@ -123,6 +125,5 @@
         
         </ul>
     </div>
-
       <% } %>
     <% include partials/footer.ejs %>

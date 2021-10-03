@@ -1,3 +1,9 @@
+/*  Filename:     style.css 
+    Student name: Kyle O'Keeffe
+    StudentID:    301156790
+    Date:         Oct. 2, 2021
+*/
+
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
@@ -5,11 +11,3 @@ body {
 a {
   color: #00B7FF;
 }
-
-/* #resumeButton{
-  width:100%;
-} */
-
-/* form{
-  width:60%;
-} */
