@@ -7,9 +7,7 @@ router.get('/', function(req, res, next) {
   res.render('contact', { title: 'Contact Me' });
 });
 
-router.get('/action_page.php', function(req, res, next) {
-  res.render('index', { title: 'Home' });
-});
+
 
 
 module.exports = router;
